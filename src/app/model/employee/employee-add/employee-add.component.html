@@ -1,0 +1,53 @@
+
+<!-- THIS MIGHT BE DONE AS WELL using MATERIAL CARD without TOOLBAR-->
+<!-- <h2> Create Employee</h2>
+
+<mat-card>
+<mat-form-field>
+    <mat-label>Name</mat-label>
+    <input matInput>
+</mat-form-field>
+<br>
+<mat-form-field>
+    <mat-label>Email</mat-label>
+    <input matInput>
+</mat-form-field>
+<br>
+<mat-form-field>
+    <mat-label>Phone No.</mat-label>
+    <input matInput>
+</mat-form-field>
+<button></button>
+</mat-card> -->
+
+
+
+<!-- ANOTHER WAY OF DOING IT  -->
+
+<mat-toolbar>
+    <span>Registration</span>
+</mat-toolbar>
+<mat-card class="my-card">
+    <mat-card-content>
+        <!-- the contens be here -->
+        <!-- add-up the code inside form" (ngSubmit)="onSubmit()" " if needed -->
+        <form class="my-form" >
+            <mat-form-field class="full-width">
+                <mat-label>Full Name</mat-label>
+                <input matInput placeholder="Name" name="name" id="name" [(ngModel)]="employee.name" required>
+            </mat-form-field>
+            <mat-form-field class="full-width">
+                <mat-label>Email</mat-label>
+                <input matInput placeholder="example@email.com" name="email" id="email" [(ngModel)]="employee.email" required>
+            </mat-form-field>
+            <mat-form-field class="full-width">
+                <mat-label>Phone No.</mat-label>
+                <input matInput placeholder="01612345678" name="phoneNumber" id="phoneNumber" [(ngModel)]="employee.phoneNumber" required>
+            </mat-form-field>
+        </form>
+    </mat-card-content>
+    <mat-card-actions>
+        <!-- doing the button here -->
+        <button mat-raised-button (click)="register()" color="primary">Add</button>
+    </mat-card-actions>
+</mat-card>

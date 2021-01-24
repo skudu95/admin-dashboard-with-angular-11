@@ -1,0 +1,27 @@
+<mat-toolbar>
+    <span>Update Empoloyee</span>
+</mat-toolbar>
+<mat-card class="my-card">
+    <mat-card-content>
+        <!-- the contens be here -->
+        <!-- add-up the code inside form" (ngSubmit)="onSubmit()" " if needed -->
+        <form class="my-form" >
+            <mat-form-field class="full-width">
+                <mat-label>Full Name</mat-label>
+                <input matInput placeholder="Name" name="name" id="name" [(ngModel)]="employee.name" required>
+            </mat-form-field>
+            <mat-form-field class="full-width">
+                <mat-label>Email</mat-label>
+                <input matInput placeholder="example@email.com" name="email" id="email" [(ngModel)]="employee.email" required>
+            </mat-form-field>
+            <mat-form-field class="full-width">
+                <mat-label>Phone No.</mat-label>
+                <input matInput placeholder="01612345678" name="phoneNumber" id="phoneNumber" [(ngModel)]="employee.phoneNumber" required>
+            </mat-form-field>
+        </form>
+    </mat-card-content>
+    <mat-card-actions>
+        <!-- doing the button here -->
+        <button mat-raised-button (click)="updateEmployee()" color="primary">Update</button>
+    </mat-card-actions>
+</mat-card>
