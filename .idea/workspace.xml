@@ -11,15 +11,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="73da7aad-39c4-4717-87f6-1c84edd69e41" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layouts/default/default.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layouts/default/default.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/model/employee/employee-add/employee-add.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/model/employee/employee-add/employee-add.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/model/employee/employee-add/employee-add.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/model/employee/employee-add/employee-add.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/model/employee/employee-add/employee-add.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/model/employee/employee-add/employee-add.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/modules/articles.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/articles.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/modules/dashboard/dashboard.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/dashboard/dashboard.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/shared/components/confirmation-dialog/confirmation-dialog.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/components/confirmation-dialog/confirmation-dialog.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/shared/components/confirmation-dialog/confirmation-dialog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/components/confirmation-dialog/confirmation-dialog.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/tslint.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +85,7 @@
       <updated>1610255252571</updated>
       <workItem from="1610255260485" duration="28756000" />
       <workItem from="1610875272093" duration="13000" />
+      <workItem from="1611564121911" duration="10461000" />
     </task>
     <servers />
   </component>
@@ -102,9 +105,14 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="978" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1610275422811">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state x="555" y="301" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1611566660324">
+      <screen x="0" y="25" width="1680" height="965" />
+    </state>
+    <state x="555" y="301" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1680.965@0.25.1680.965" timestamp="1611566660324" />
+    <state x="978" y="239" width="670" height="622" key="search.everywhere.popup" timestamp="1611568549544">
+      <screen x="0" y="25" width="1680" height="965" />
     </state>
     <state x="978" y="233" width="670" height="676" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1610275422811" />
+    <state x="978" y="239" width="670" height="622" key="search.everywhere.popup/0.25.1680.965@0.25.1680.965" timestamp="1611568549544" />
   </component>
 </project>

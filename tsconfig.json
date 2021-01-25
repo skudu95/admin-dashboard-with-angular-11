@@ -5,7 +5,8 @@
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
-    "strict": true,
+    "strict": false,
+//    strict done to false
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
@@ -15,6 +16,7 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "target": "es2015",
+    "strictPropertyInitialization": false,
     // "typeRoots": [
     //   "node_modules/@types"
     // ],

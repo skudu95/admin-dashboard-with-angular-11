@@ -1,4 +1,3 @@
-
 <!-- THIS MIGHT BE DONE AS WELL using MATERIAL CARD without TOOLBAR-->
 <!-- <h2> Create Employee</h2>
 
@@ -21,33 +20,93 @@
 </mat-card> -->
 
 
-
 <!-- ANOTHER WAY OF DOING IT  -->
 
+<!--<mat-toolbar>-->
+<!--  <span>Registration</span>-->
+<!--</mat-toolbar>-->
+<!--<mat-card class="my-card">-->
+<!--  <mat-card-content>-->
+<!--    &lt;!&ndash; the contents be here &ndash;&gt;-->
+<!--    &lt;!&ndash; add-up the code inside form" (ngSubmit)="onSubmit()" " if needed &ndash;&gt;-->
+<!--    <form class="my-form">-->
+<!--      &lt;!&ndash;          <form [formGroup]="my-form" >&ndash;&gt;-->
+
+<!--      &lt;!&ndash;            Full Name&ndash;&gt;-->
+<!--      <mat-form-field class="full-width">-->
+<!--        <mat-label>Full Name</mat-label>-->
+<!--        <input matInput placeholder="Name" name="name" id="name" [(ngModel)]="employee.name" required>-->
+<!--      </mat-form-field>-->
+
+<!--      &lt;!&ndash;            Email&ndash;&gt;-->
+<!--      <mat-form-field class="full-width">-->
+<!--        <mat-label>Email</mat-label>-->
+<!--        &lt;!&ndash;              <input matInput placeholder="example@email.com" formControlName="employee.email">&ndash;&gt;-->
+<!--        <input matInput placeholder="example@email.com" name="email" id="email" [(ngModel)]="employee.email" required>-->
+<!--        &lt;!&ndash; <mat-error *ngIf="employee.email.invalid">{{getErrorMessage()}}</mat-error> &ndash;&gt;-->
+<!--      </mat-form-field>-->
+
+<!--      &lt;!&ndash;            Phone Number&ndash;&gt;-->
+<!--      <mat-form-field class="full-width">-->
+<!--        <mat-label>Phone No.</mat-label>-->
+<!--        <input matInput placeholder="01612345678" name="phoneNumber" id="phoneNumber" [(ngModel)]="employee.phoneNumber"-->
+<!--               required>-->
+<!--      </mat-form-field>-->
+<!--    </form>-->
+<!--  </mat-card-content>-->
+<!--  <mat-card-actions>-->
+<!--    &lt;!&ndash; doing the button here &ndash;&gt;-->
+<!--    <button mat-raised-button (click)="register()" color="primary">Add</button>-->
+<!--  </mat-card-actions>-->
+<!--</mat-card>-->
+
+
+<br>
+
+
+<!--ANOTHER WAY OF DOING THE REACTIVE FORM .. ALONG WITH VALIDATION-->
 <mat-toolbar>
-    <span>Registration</span>
+  <span>Registration-2</span>
 </mat-toolbar>
+
 <mat-card class="my-card">
-    <mat-card-content>
-        <!-- the contens be here -->
-        <!-- add-up the code inside form" (ngSubmit)="onSubmit()" " if needed -->
-        <form class="my-form" >
-            <mat-form-field class="full-width">
-                <mat-label>Full Name</mat-label>
-                <input matInput placeholder="Name" name="name" id="name" [(ngModel)]="employee.name" required>
-            </mat-form-field>
-            <mat-form-field class="full-width">
-                <mat-label>Email</mat-label>
-                <input matInput placeholder="example@email.com" name="email" id="email" [(ngModel)]="employee.email" required>
-            </mat-form-field>
-            <mat-form-field class="full-width">
-                <mat-label>Phone No.</mat-label>
-                <input matInput placeholder="01612345678" name="phoneNumber" id="phoneNumber" [(ngModel)]="employee.phoneNumber" required>
-            </mat-form-field>
-        </form>
-    </mat-card-content>
-    <mat-card-actions>
-        <!-- doing the button here -->
-        <button mat-raised-button (click)="register()" color="primary">Add</button>
-    </mat-card-actions>
+  <mat-sidenav-container>
+    <mat-sidenav-content>
+
+      <form [formGroup]="myForm" (ngSubmit)="register()" novalidate>
+
+        <!-- Name -->
+        <mat-form-field class="example-full-width">
+          <mat-label>Full Name</mat-label>
+          <!--          TODO: [(ngModel)] not needed since formControlName does all binding..!!-->
+          <input matInput placeholder="Name" formControlName="name" >
+<!--          error message-->
+          <mat-error *ngIf="errorHandling('name', 'required')">
+            Name is mandatory
+          </mat-error>
+        </mat-form-field>
+
+        <!-- Email -->
+        <mat-form-field class="example-full-width">
+          <mat-label>Email</mat-label>
+          <input matInput placeholder="Email" formControlName="email" >
+        </mat-form-field>
+
+        <!-- Phone Number-->
+        <mat-form-field>
+          <mat-label>Phone Number</mat-label>
+          <input matInput placeholder="01612345678" formControlName="phoneNumber" >
+        </mat-form-field>
+
+
+        <!-- Submit -->
+        <div class="button-wrapper">
+          <button mat-flat-button color="primary">Submit</button>
+        </div>
+
+      </form>
+
+    </mat-sidenav-content>
+  </mat-sidenav-container>
 </mat-card>
+

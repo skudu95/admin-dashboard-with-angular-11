@@ -1,13 +1,14 @@
 import { Injectable } from '@angular/core';
 import axios from 'axios';
 import { Employee } from './articles/employee';
+import {FormGroup} from '@angular/forms';
 
 @Injectable({
   providedIn: 'root'
 })
 
 
-// TODO: re-check what's actually going on here 
+// TODO: re-check what's actually going on here
 const baseUrl = 'http://localhost:8020/api/v2/employees';
 
 export class ArticlesService {
@@ -36,5 +37,9 @@ export class ArticlesService {
   // CHECK THE PARAM...!!!!
   createEmployees(employee: Employee) {
     return axios.post(baseUrl, employee)
+  }
+
+  createForm(myForm: FormGroup){
+    return axios.post(baseUrl, myForm);
   }
 }
